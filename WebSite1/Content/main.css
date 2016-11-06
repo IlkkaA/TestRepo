@@ -1,9 +1,81 @@
-﻿body {
+﻿
+html {
+    font-size: 16px;
 }
 
-.content-fw {
-
+body {
+    font-size: 1rem;
 }
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+
+/*
+GENERAL STYLES
+***************************/
+.div-fw {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.cont-test {
+    min-height: 200px;
+    border: 1px solid lightblue;
+}
+
+.pd-5-5 {
+    padding: 5% 5%;
+}
+
+.text-center {
+    text-align: center;
+}
+/*
+CONTENT DIVS
+***************************/
+
+.content-1 {
+    min-height: 300px;
+    margin-top: -22px;
+    /*background-color: lightskyblue;*/
+    color: slateblue;
+    text-align: center;
+    background: url("../img/smooth_wall.png");
+}
+.content-2 {
+    background-color: black;
+    min-height: 300px;
+    text-align: left;
+}
+.content-3 {
+    background-color: lightgreen;
+    min-height: 300px;
+}
+.content-4 {
+    background-color: black;
+    min-height: 300px;
+}
+.content-5 {
+    background-color: lightgoldenrodyellow;
+    min-height: 300px;
+}
+
+/*
+INNER CONTENT ELEMENTS
+***************************/
 
 .content-bar {
     border: 1px solid black;
@@ -11,8 +83,9 @@
 }
 
 .btn-custom {
+    background-color: white;
     color: black;
-    border: 1px solid lightskyblue;
+    border: 1px solid white;
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
@@ -21,7 +94,22 @@
 }
 
 .btn-custom:hover {
-    background-color: aliceblue;
+    background-color: linen;
     text-decoration: none;
-    box-shadow: 1px 1px black;
+    /*box-shadow: 1px 1px black;*/
+}
+
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+/*
+MEDIA QUERIES
+***************************/
+
+@media (max-width: 900px) {
+  /* html { font-size: 16px; }  MAYBE */
 }

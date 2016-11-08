@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     console.log("ready!");
 
+    /////////////////////////////////////////////////////
     //gradentify
     // target to give background to
     var $div = document.getElementById("gradentify");
@@ -114,10 +115,10 @@
     // go go go!
     timer = setInterval(updateGradient, interval_time);
 
-    // dragula
-    dragula([document.getElementById(left), document.getElementById(right)]);
 
 
+
+    ///////////////////////////////////////////////////
     // chart.js
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {

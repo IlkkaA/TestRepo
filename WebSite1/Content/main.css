@@ -1,6 +1,6 @@
 ﻿
 html {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 body {
@@ -56,7 +56,6 @@ CONTENT DIVS
 
 .content-1 {
     height: 100vh;
-    margin-top: -22px;
     text-align: center;
     background: url("../img/7.jpg");
         color: lightcyan;
@@ -64,8 +63,8 @@ CONTENT DIVS
 .content-2 {
     min-height: 300px;
     text-align: left;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .content-3 {
     background-color: lightgreen;
@@ -101,9 +100,9 @@ INNER CONTENT ELEMENTS
 }
 
 .btn-custom:hover {
-    background-color: linen;
+    color: rebeccapurple;
     text-decoration: none;
-    /*box-shadow: 1px 1px black;*/
+    box-shadow: 2px 4px 4px lightblue;
 }
 
 /*

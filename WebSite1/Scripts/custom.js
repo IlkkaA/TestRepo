@@ -116,8 +116,6 @@
     timer = setInterval(updateGradient, interval_time);
 
 
-
-
     ///////////////////////////////////////////////////
     // chart.js
     var ctx = document.getElementById("myChart");

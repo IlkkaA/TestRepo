@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,12 @@
     <!-- Bootstrap -->
     <link href="Content/normalize.css" rel="stylesheet" type='text/css'/>
     <link href="Content/bootstrap.min.css" rel="stylesheet" type='text/css'/>
+    <link href="Content/drag_and_drop.css" rel="stylesheet" type='text/css' />
     <link href="Content/main.css" rel="stylesheet" type='text/css'/>
 
     <!-- AngularJS-->
+    <script src="Scripts/angular.min.js"></script>
+
     <!-- TODO: UPDATE HTML5SHIV AND RESPOND -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,10 +41,17 @@
 
         <div class="div-fw cntnt content-2">
             <div class="container cont-test">
-                <h2>Testi testiä</h2>
-                
-                
 
+                <div ng-controller="TestCtrl">
+                    <h1>{{ helloWorld }}</h1>
+                </div>
+                
+                <div class="btn btn-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{animate:true}" ng-hide="!list1.title">{{list1.title}}</div>
+
+                <div class="thumbnail" data-drop="true" data-jqyoui-options ng-model="list2" jqyoui-droppable style='height:50px;'>
+                    <div class="btn btn-success" data-drag="false" data-jqyoui-options ng-model="list2" jqyoui-draggable ng-hide="!list2.title">{{list2.title}}</div>
+                </div>
+                
             </div>
 
         </div> <!-- div content 2 -->
@@ -78,9 +88,9 @@
     <script src="Scripts/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Controllers/firstCtrl.js"></script>
     <script src="Gradientify/jquery.gradentify.js"></script>
-    <script src="Scripts/Chart.js"></script>
-     
+    <script src="Scripts/Chart.js"></script>   
     <script src="Scripts/custom.js"></script>
 
 </body>
